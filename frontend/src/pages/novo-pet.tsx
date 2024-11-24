@@ -4,10 +4,13 @@ import { PageHeading } from "@/components/page-heading";
 import { Select } from "@/components/select";
 import { Textarea } from "@/components/textarea";
 import { type FormEvent, useCallback } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useParams } from "react-router";
 
 export function NovoPet() {
 	const navigate = useNavigate();
+	const params = useParams();
+
+	const isEditing = !!params?.id;
 
 	const handleSubmit = useCallback(
 		(event: FormEvent<HTMLFormElement>) => {
@@ -26,8 +29,12 @@ export function NovoPet() {
 	return (
 		<>
 			<PageHeading
-				title="Novo PetCard"
-				description="Cadastre aqui seu novo PetCard."
+				title={isEditing ? "Cadastro" : "Novo PetCard"}
+				description={
+					isEditing
+						? "Edite aqui os dados de seu PetCard."
+						: "Cadastre aqui seu novo PetCard."
+				}
 			/>
 
 			<form className="grid gap-6" onSubmit={handleSubmit}>
@@ -56,7 +63,7 @@ export function NovoPet() {
 				<Textarea name="notes" label="Observações" required />
 
 				<Button className="mt-20" type="submit">
-					Salvar dados
+					{isEditing ? "Editar dados" : "Cadastrar Pet"}
 				</Button>
 			</form>
 		</>

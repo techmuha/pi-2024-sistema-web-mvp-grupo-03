@@ -10,8 +10,8 @@ export function IndexPets() {
 			</p>
 
 			<div className="flex space-x-3 overflow-x-auto whitespace-nowrap px-6">
-				<PetCard name="Duff" breed="Corgi" image={duff1} />
-				<PetCard name="Emily" breed="Siamês" image={emily1} />
+				<PetCard name="Duff" breed="Corgi" image={duff1} to="/pet/1" />
+				<PetCard name="Emily" breed="Siamês" image={emily1} to="/pet/2" />
 			</div>
 		</div>
 	);

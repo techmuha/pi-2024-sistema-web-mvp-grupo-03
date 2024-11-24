@@ -33,6 +33,7 @@ function App() {
 					<Route path="meus-dados" element={<MeusDados />} />
 					<Route path="novo-pet" element={<NovoPet />} />
 					<Route path="pet/:id" element={<Pet />} />
+					<Route path="pet/:id/editar" element={<NovoPet />} />
 					<Route path="pet/:id/coleira" element={<Coleira />} />
 					<Route path="pet/:id/documentos" element={<Documentos />} />
 					<Route path="pet/:id/fotos" element={<Fotos />} />
