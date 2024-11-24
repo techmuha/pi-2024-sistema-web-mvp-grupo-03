@@ -7,6 +7,8 @@
 ## Desenvolvedores
 
 - Leonardo de Campos
+- Marcus Antonio Cardoso Anacleto
+- Guilherme dos Santos Eirale de Sousa
 
 ## Setup
 
@@ -16,6 +18,10 @@ Ambos projetos utilizam o [yarn](https://yarnpkg.com/getting-started/install) in
 
 - Rode `yarn`;
 - Rode `yarn dev` para subir o ambiente de frontend.
+
+### Backend
+
+### Banco de dados
 
 ---
 
