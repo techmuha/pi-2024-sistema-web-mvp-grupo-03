@@ -4,11 +4,21 @@ import emily1 from "~/emily-1.png";
 import qrcode from "~/qrcode-sample.png";
 import news1 from "~/news-1.png";
 import news2 from "~/news-2.png";
+import { PlusCircle } from "react-feather";
 
 export function Fotos() {
 	return (
 		<div>
-			<PageHeading title="Fotos" description="[NOME]" />
+			<PageHeading
+				title="Fotos"
+				description="[NOME]"
+				action={
+					<label className="text-secondary">
+						<input className="hidden" type="file" />
+						<PlusCircle />
+					</label>
+				}
+			/>
 
 			<div className="grid grid-cols-3 gap-[3px] overflow-hidden rounded-2xl">
 				{[
