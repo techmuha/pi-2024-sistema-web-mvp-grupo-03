@@ -13,7 +13,7 @@ export function ItemMenu({ to, children, onClick }: ItemMenuProps) {
 		<Link
 			to={to}
 			onClick={onClick}
-			className="flex items-center justify-between gap-2 rounded-lg bg-gray-100 px-4 py-[14px] text-sm font-medium"
+			className="flex items-center justify-between gap-2 rounded-lg bg-gray-200 px-4 py-[14px] text-sm font-medium"
 		>
 			{children}
 

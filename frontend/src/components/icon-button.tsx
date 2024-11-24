@@ -5,11 +5,11 @@ export type IconButtonProps = DetailedHTMLProps<
 	HTMLButtonElement
 >;
 
-export function IconButton({ children, ...props }: IconButtonProps) {
+export function IconButton({ children, className, ...props }: IconButtonProps) {
 	return (
 		<button
 			type="button"
-			className="grid h-14 w-14 place-items-center rounded-full bg-primary/20 text-primary"
+			className={`grid h-14 w-14 place-items-center rounded-full bg-primary/20 text-primary ${className}`.trim()}
 			{...props}
 		>
 			{children}
