@@ -4,11 +4,11 @@
 
 - Front-end desenvolvido com React.js
 - Banco feito em MySQL 8.0.40
+- Backend feito em Node.js
 
 ## Desenvolvedores
 
 - Leonardo de Campos
-- Marcus Antonio Cardoso Anacleto
 - Guilherme dos Santos Eirale de Sousa
 
 ## Setup
@@ -21,6 +21,13 @@ Ambos projetos utilizam o [yarn](https://yarnpkg.com/getting-started/install) in
 - Rode `yarn dev` para subir o ambiente de frontend.
 
 ### Backend
+
+Este repositório contém o backend para uma API de gerenciamento de usuários e pets, desenvolvido com Node.js, Express e MySQL. A API expõe endpoints RESTful para realizar operações de CRUD (Create, Read, Update e Delete) nas tabelas usuarios e pets.
+
+#### Setup
+
+- Rode `yarn`;
+- Rode `yarn dev` para subir o ambiente do backend.
 
 ### Banco de dados
 
