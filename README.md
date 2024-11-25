@@ -3,6 +3,7 @@
 ## PetCard
 
 - Front-end desenvolvido com React.js
+- Banco feito em MySQL 8.0.40
 
 ## Desenvolvedores
 
@@ -22,6 +23,10 @@ Ambos projetos utilizam o [yarn](https://yarnpkg.com/getting-started/install) in
 ### Backend
 
 ### Banco de dados
+
+Este projeto utiliza um banco de dados MySQL chamado pets_db, desenvolvido para gerenciar informações relacionadas a pets e seus tutores. A estrutura do banco inclui as seguintes tabelas principais: `pets` e `usuarios`
+O dump fornecido inclui exemplos de dados para facilitar o teste e a demonstração do sistema.
+
 
 ---
 
